@@ -8,6 +8,7 @@
     "apiMergeSettings": {
       "type": "Full"
     },
+    "tailIncludes": "<script defer src='./static/api-recipes/get-all-accounts.js'></script><script>document.addEventListener('DOMContentLoaded', (event) => {APIMaticDevPortal.ready(({ registerWorkflow }) => {registerWorkflow('page:api-recipes/get-all-accounts','Get All Accounts',GetAllAccounts);});});</script>",
     "languageConfig": {
       "http": {},
       "csharp": {},
@@ -197,7 +198,7 @@
       "renameHttpToRest": false
     },
     "pageTitle": "Yodlee APIs",
-    "navTitle": "APIMatic",
+    "navTitle": "Yodlee APIs",
     "logoUrl": "https://apimaticio.blob.core.windows.net/images/draft-logos/logo-2c371217-d9ee-4f10-852d-cd5feb7d9180.png",
     "logoUrlDark": "https://apimaticio.blob.core.windows.net/images/draft-logos/logo-dark-a8c20bfa-12e4-472a-bf15-cbd919766750.png",
     "logoLink": "",
@@ -213,7 +214,7 @@
   },
   "apiCopilotConfig": {
     "key": "2664854d-a665-4f4f-8dd8-be99a251979c",
-    "welcomeMessage": "Welcome to the Yodlee Developer Portal!\n\nExplore the following prompts and harness the power of the Yodlee API with API Copilot\u0027s assistance!\n\n - \u0060How can I get started with linking my bank accounts?\u0060 \n - \u0060Can you show me all the accounts I have across different banks?\u0060 \n - \u0060I want to check the balance in one of my accounts. How do I do that?\u0060 \n - \u0060How do I see my recent transactions?\u0060 \n - \u0060Can I get detailed information about a specific transaction?\u0060 \n - \u0060How can I view my net worth or asset summary?\u0060",
+    "welcomeMessage": "Welcome to the Yodlee Developer Portal!\n\nExplore the following prompts and harness the power of the Yodlee API with API Copilot\u0027s assistance!\n\n - \u0060Can you show me all the accounts I have across different banks?\u0060 \n - \u0060I want to check the balance in one of my accounts. How do I do that?\u0060 \n - \u0060How do I see my recent transactions?\u0060 \n - \u0060Can I get detailed information about a specific transaction?\u0060 \n - \u0060How can I view my net worth or asset summary?\u0060",
     "isEnabled": true
   }
 }

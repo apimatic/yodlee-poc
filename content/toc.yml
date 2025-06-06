@@ -1,6 +1,10 @@
 toc:
 - generate: Step by Step Tutorial
   from: getting-started
+- group: API Recipes
+  items:
+    - page: Get All Accounts
+      file: api-recipes/get-all-accounts.md
 - generate: API Endpoints
   from: endpoints
 - generate: Models
