@@ -29,6 +29,7 @@
       "enableConsoleCalls": true,
       "useProxyForConsoleCalls": true,
       "languageSettings": {
+        "initialPlatform": "cs_net_standard_lib",
         "http_curl_v1": {
           "sdkDownloadLink": "",
           "disableSdkDownload": false

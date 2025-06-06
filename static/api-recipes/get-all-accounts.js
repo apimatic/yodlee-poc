@@ -64,7 +64,7 @@ The access token generated in the step 1 will be automatically included in this 
               ...defaultConfig.auth,
               "Authorization": {
                 ...defaultConfig.auth["Authorization"],
-                "Authorization": step2State?.data?.token?.accessToken,
+                "Authorization": "Bearer" + step2State?.data?.token?.accessToken,
               }
             },
           };
