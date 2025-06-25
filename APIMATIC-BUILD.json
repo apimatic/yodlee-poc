@@ -2,6 +2,8 @@
   "$schema": "https://titan.apimatic.io/api/build/schema",
   "buildFileVersion": "1",
   "generatePortal": {
+    "baseUrl": "https://apimatic-yodlee-poc.pages.dev",
+    "llmsContextGeneration": {},
     "contentFolder": "./",
     "apiSpecPath": "./spec",
     "apiSpecs": [],
@@ -20,8 +22,7 @@
       "go": {}
     },
     "portalSettings": {
-      "baseUrl": "https://apimatic-yodlee-poc.pages.dev",
-      "llmsContextGeneration": {},
+      "baseUrl": "./",
       "container": "apimatic-widget",
       "portalStyle": "default",
       "apiKey": "xxx",
