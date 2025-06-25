@@ -21,9 +21,7 @@
     },
     "portalSettings": {
       "baseUrl": "https://apimatic-yodlee-poc.pages.dev",
-      "llmsContextGeneration": {
-        "enable": true
-      },
+      "llmsContextGeneration": {},
       "container": "apimatic-widget",
       "portalStyle": "default",
       "apiKey": "xxx",
@@ -31,8 +29,8 @@
       "enableAnalytics": true,
       "enableConsoleCalls": true,
       "useProxyForConsoleCalls": true,
+      "initialPlatform": "cs_net_standard_lib",
       "languageSettings": {
-        "initialPlatform": "cs_net_standard_lib",
         "http_curl_v1": {
           "sdkDownloadLink": "",
           "disableSdkDownload": false
