@@ -20,6 +20,10 @@
       "go": {}
     },
     "portalSettings": {
+      "baseUrl": "https://apimatic-yodlee-poc.pages.dev",
+      "llmsContextGeneration": {
+        "enable": true
+      },
       "container": "apimatic-widget",
       "portalStyle": "default",
       "apiKey": "xxx",
