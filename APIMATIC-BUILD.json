@@ -27,7 +27,6 @@
       "container": "apimatic-widget",
       "portalStyle": "default",
       "apiKey": "xxx",
-      "baseUrl": "./",
       "enableExport": true,
       "enableAnalytics": true,
       "enableConsoleCalls": true,
