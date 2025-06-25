@@ -19,7 +19,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: print branch
         run: echo '${{ github.ref }}'
@@ -75,3 +75,17 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy portal --branch=main --project-name=${{ secrets.CLOUDFLARE_PROJECT_NAME }}
+
+      # Fail job if API response is not 200
+      - name: Log error if not successful
+        if: ${{steps.generate-portal.outputs.HTTP_CODE != '200' && steps.generate-portal.outputs.CONTENT_TYPE != 'application/zip'}}
+        run: |
+          echo "The Portal Generation request failed with response code ${{steps.generate-portal.outputs.HTTP_CODE}} and message $(cat portal)"; \
+          exit 1
+        
+      # Fail job if API response is not 200 and is a zip file
+      - name: Log error if not successful
+        if: ${{steps.generate-portal.outputs.HTTP_CODE != '200' && steps.generate-portal.outputs.CONTENT_TYPE == 'application/zip'}}
+        run: |
+          echo "The Portal Generation request failed with response code ${{steps.generate-portal.outputs.HTTP_CODE}}; \
+          exit 1
